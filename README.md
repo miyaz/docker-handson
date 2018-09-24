@@ -124,8 +124,7 @@ docker container exec -it manager docker stack services ingress
 ```
 
 ### コンテナ配置確認
-# コンテナ配置確認用のStackを作る（スキップOK）
-
+コンテナ配置確認用のStackを作る（スキップOK）
 ```
 docker container exec -it manager docker stack deploy -c /stack/visualizer.yml visualizer
 docker container exec -it manager docker stack services visualizer
