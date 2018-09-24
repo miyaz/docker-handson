@@ -113,6 +113,8 @@ docker container exec -it manager docker network create --driver=overlay --attac
 docker container exec -it manager docker stack deploy -c /stack/webapi.yml echo
 # echoスタックのService一覧を表示します
 docker container exec -it manager docker stack services echo
+# echoスタックでデプロイされたコンテナ一覧を表示します
+docker container exec -it manager docker stack ps echo
 ```
 
 ### アプリアクセス用Stack作成
