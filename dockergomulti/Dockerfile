@@ -1,3 +1,6 @@
+# multi stage build のサンプル
+# dockergo/と同じアプリですがイメージサイズが約1/100になります
+
 FROM golang:latest as builder
 
 ENV CGO_ENABLED=0
