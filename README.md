@@ -1,5 +1,7 @@
 # docker hands-on
 
+[JAWS-UG沖縄 AWS Fargateハンズオン 2018年09月](https://jaws-ug-okinawa.doorkeeper.jp/events/80071)で使うコードです
+
 ## コンテナ動作確認
 
 ### アプリ動作確認
@@ -141,6 +143,6 @@ curl 127.0.0.1:8000
 ```
 docker container stop $(docker container ls -aq)
 docker container rm $(docker container ls -aq)
+# 全イメージ消えちゃうので注意！！
 docker image rm -f $(docker image ls -aq)
 ```
-
